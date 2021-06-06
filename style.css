@@ -1,0 +1,135 @@
+
+.navbar-brand{
+    margin-left: 5px;
+    padding: 3px;
+    background-color: rgb(81, 175, 160);
+    font-size: 30px;
+}
+
+h2{
+    color: rgb(46, 175, 154);
+    font-weight: bold;
+    font-size: 24px;
+    
+}
+
+h3{
+    color: rgb(46, 175, 154);
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+h4{
+    color: rgb(46, 175, 154);
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* image styling*/
+.img-thumbnail{
+    padding:10px;
+    border: none;
+}
+
+/* fontstyling for main text*/
+p{
+   color: grey;
+   font-size: 14px;
+   padding:10px;
+}
+
+/* body background*/
+
+.col-md-12{
+    background-color: white;
+    padding-top: 0px;
+    padding:10px;
+}
+
+/* image border styling*/
+.pic{
+    border: 3px solid rgb(81, 175, 160);
+}
+
+.myimage{
+    width:40%;
+    margin-left:0px;
+}
+
+/* navbar styling*/
+.navbar{
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-right:20px;
+}
+
+.nav-item.dropdown.show {
+    background-color: white;
+}
+
+.dropdown-menu {
+    margin: 0;
+}
+
+/* content styling*/
+.content {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    background-color: rgba(233, 230, 230, 0.575);
+}
+
+.content.white {
+    margin-top: 0px;
+    background-color:white;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+.frame {
+    border: 3px solid rgb(81, 175, 160);
+}
+
+
+#regular_text {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding:2px;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+/* small screen adjustments*/
+@media(max-width:767px){
+    .navbar.bg-light{
+        background-color: rgb(81, 175, 160) !important
+    }
+
+    .navbar-collapse{
+        background-color: #f8f9fa;
+    }
+    .navbar{
+        padding:inherit;
+    }
+    .content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        overflow: hidden;
+        background-color:white;
+    }
+
+    .myimage {
+          display: none;
+        }
+}
