@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Max Temperature</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Latitude</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+      </head>
+
 
 <body>
-     <!--Navbar adjustments-->
-     <nav class="navbar navbar-expand-lg navbar-dark navbar-full"  style="background-color: rgb(81, 175, 160)">
-        <a href="index.html"><img class="myimage" src="Resources\assets\images\home.jpg" alt="Latitude"></a>
+    
+    <!--Navbar adjustments-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-full"  style="background-color: rgb(81, 175, 160)">
         <div class="container">
             <a class="navbar-brand text-white font-weight-bold"  href="index.html" >Latitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         
-            
-            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">    
                     <li class="nav-item dropdown">
@@ -43,49 +42,56 @@
             </div>
         </div>
     </nav>
-
-    <!--wind speed content adjustments-->
-    <div class="container content">
+    
+    <!--container, rows and columns and images -->
+    <div class="container content">    
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12">
-                    <h3>Max Temperature</h3>
+                    <h3>Summary: Latitude vs. X </h3>
                     <hr>
-                    <img src="Resources\assets\images\temp_lat.png" width="100%" alt="max temperature">
-                    <br>
-                    <p>As expected, the weather becomes signifcantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that summer time at 
-                      the southern hemisphere corresponds to winter time at the northern hemisphere and vice versa. This may be due to the tilt of the earth. The plot above shows the max
-                      temperature of 500+ cities on a certain day. Cities closer to the equator have warmer temperature as compared to cities closer to the poles.</p>
+                    <div class="thumbnail">
+                        <img class="img-thumbnail float-left" src="Resources/assets/images/temp_lat.png " width="40%" alt="temperature">
+                    </div>
+                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from
+                    the OpenWeatherMap API to assemble a dataset on over 500 cities.</p> <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude.
+                    Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis,
+                    as well as explanations and descriptions of any trends and correlations witnessed.</p>
                 </div>
             </div>
-            <!--visualizations container adjustments-->
+            <!--visualization adjustments-->
             <div class="col-md-4">
                 <div class="col-md-12">
                     <h3>Visualizations</h3>
                     <hr>
                     <div class="row">
-                      <div class="col-3 col-md-6">
-                        <a href="Lat_vs_temp.html"><img class="frame" src="Resources\assets\images\temp_lat.png" width="100%"  alt="Latitude x Temperature">
-                        </a> 
-                    </div>
-                    <div class="col-3 col-md-6">
-                        <a href="Lat_vs_humidity.html"><img src="Resources\assets\images\humidity_lat.png" width="100%" alt="Latitude x Humidity"></a>
-                    </div>
-               
-                    <div class="col-3 col-md-6">
-                        <a href="Lat_vs_cloudiness.html"><img src="Resources\assets\images\cloudiness_lat.png" width="100%"  alt="Latitude x Cloudiness"></a>
-                    </div>
+                        <div class="col-3 col-md-6">
+                            <a href="Lat_vs_temp.html"><img src="Resources\assets\images\temp_lat.png" width="100%"  alt="Latitude x Temperature"></a> 
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <a href="Lat_vs_humidity.html"><img src="Resources\assets\images\humidity_lat.png" width="100%" alt="Latitude x Humidity"></a>
+                        </div>
+                   
+                        <div class="col-3 col-md-6">
+                            <a href="Lat_vs_cloudiness.html"><img src="Resources\assets\images\cloudiness_lat.png" width="100%"  alt="Latitude x Cloudiness"></a>
+                        </div>
 
-                    <div class="col-3 col-md-6">
-                      <a href="Lat_vs_wind.html"><img src="Resources\assets\images\ws_lat.png"width="100%"  alt="Latitude x Wind Speed"></a>
-                    </div>
+<<<<<<< HEAD:Index.html
+                        <div class="col-3 col-md-6">
+                            <a href="Lat_vs_wind.html"><img src="Resources\assets\images\ws_lat.png"width="100%"  alt="Latitude x Wind Speed"></a>
+                        </div>
                     </div>
                 </div>
-            </div>            
-        </div>    
+            </div>
+        </div>
     </div>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+=======
+        
+      </body>
+>>>>>>> f47009ff0bcc2424e5dd6350840f9099321fa0c5:index.html

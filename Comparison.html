@@ -3,23 +3,21 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Max Temperature</title>
+    <title>Comparison</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
 
-<body>
-     <!--Navbar adjustments-->
-     <nav class="navbar navbar-expand-lg navbar-dark navbar-full"  style="background-color: rgb(81, 175, 160)">
-        <a href="index.html"><img class="myimage" src="Resources\assets\images\home.jpg" alt="Latitude"></a>
+  <body>
+    <!--Navbar adjustments-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-full"  style="background-color: rgb(81, 175, 160)">
+        <a href="index.html"><img class="myimage" src="Resources\assets\images\home.jpg" alt="Latitude"> </a>
         <div class="container">
             <a class="navbar-brand text-white font-weight-bold"  href="index.html" >Latitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        
-            
-            
+          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">    
                     <li class="nav-item dropdown">
@@ -44,45 +42,47 @@
         </div>
     </nav>
 
-    <!--wind speed content adjustments-->
-    <div class="container content">
+    <!--Plots for comparison-->
+    <div style= "border-bottom: 3px solid rgb(81, 175, 160)" class="container content">
         <div class="row">
-            <div class="col-md-8">
+            <div  class="col-md-12">
+                <h2>Comparison: Latitude vs X</h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p id="regular_text">Click any plot to get an in-depth analysis.</p>
+            </div>
+        </div>
+ 
+        <div  class="row">
+            <div class="col-md-6 padding-0">
                 <div class="col-md-12">
-                    <h3>Max Temperature</h3>
-                    <hr>
-                    <img src="Resources\assets\images\temp_lat.png" width="100%" alt="max temperature">
-                    <br>
-                    <p>As expected, the weather becomes signifcantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that summer time at 
-                      the southern hemisphere corresponds to winter time at the northern hemisphere and vice versa. This may be due to the tilt of the earth. The plot above shows the max
-                      temperature of 500+ cities on a certain day. Cities closer to the equator have warmer temperature as compared to cities closer to the poles.</p>
+                    <h4>vs. Max Temperature</h4>
+                    <a href="Lat_vs_temp.html"><img src="Resources\assets\images\temp_lat.png" width="100%"  alt="max temperature"></a>
                 </div>
             </div>
-            <!--visualizations container adjustments-->
-            <div class="col-md-4">
+            <div class="col-md-6 padding-0">
                 <div class="col-md-12">
-                    <h3>Visualizations</h3>
-                    <hr>
-                    <div class="row">
-                      <div class="col-3 col-md-6">
-                        <a href="Lat_vs_temp.html"><img class="frame" src="Resources\assets\images\temp_lat.png" width="100%"  alt="Latitude x Temperature">
-                        </a> 
-                    </div>
-                    <div class="col-3 col-md-6">
-                        <a href="Lat_vs_humidity.html"><img src="Resources\assets\images\humidity_lat.png" width="100%" alt="Latitude x Humidity"></a>
-                    </div>
-               
-                    <div class="col-3 col-md-6">
-                        <a href="Lat_vs_cloudiness.html"><img src="Resources\assets\images\cloudiness_lat.png" width="100%"  alt="Latitude x Cloudiness"></a>
-                    </div>
-
-                    <div class="col-3 col-md-6">
-                      <a href="Lat_vs_wind.html"><img src="Resources\assets\images\ws_lat.png"width="100%"  alt="Latitude x Wind Speed"></a>
-                    </div>
-                    </div>
+                    <h4>vs. Humidity</h4>
+                    <a href="Lat_vs_humidity.html"><img src="Resources\assets\images\humidity_lat.png" width="100%" alt="humidity"></a>
                 </div>
-            </div>            
-        </div>    
+            </div>
+            <div class="col-md-6 padding-0">
+                <div class="col-md-12">
+                    <h4>vs. Cloudiness</h4>
+                    <a href="Lat_vs_cloudiness.html"><img  src="Resources\assets\images\cloudiness_lat.png" width="100%" margin-left="10px"alt="cloudiness"></a>
+                </div>
+            </div>
+            <div class="col-md-6 padding-0">
+                <div class="col-md-12">
+                    <h4>vs. Wind Speed</h4>
+                    <a href="Lat_vs_wind.html"><img src="Resources\assets\images\ws_lat.png" width="100%" alt="wind speed"></a>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
